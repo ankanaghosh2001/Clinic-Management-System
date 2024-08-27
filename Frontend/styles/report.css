@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+form{
+    padding: 50px;
+}
+
+.form-label{
+    font-size: 25px;
+}
+
+.form-control{
+    border: 1px solid black;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 1.02rem;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-weight: 500;
+}

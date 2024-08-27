@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Treatment History</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="entryForm">
+            <h2>Patient Treatment History</h2><br><br>
+            <form action="/treatmentHistory/add" method="post" class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="PID" class="form-label">Patient ID : </label>
+                        <select name="PID" id="PID" class="form-select" required>
+                            <option value="" selected disabled hidden>Select Patient ID</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="DID" class="form-label">Doctor ID : </label>
+                        <select name="DID" id="DID" class="form-select" required>
+                            <option value="" selected disabled hidden>Select Doctor ID</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="VisitDate" class="form-label">Visit Date : </label>
+                        <input type="date" name="VisitDate" id="VisitDate" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="Symptom" class="form-label">Symptom(s) : </label>
+                        <textarea name="Symptom" id="Symptom" class="form-control" required></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="Diagnosis" class="form-label">Diagnosis(s) : </label>
+                        <textarea name="Diagnosis" id="Diagnosis" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="Medicine" class="form-label">Medicine(s) : </label>
+                        <textarea name="Medicine" id="Medicine" class="form-control" required></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="Test" class="form-label">Test(s) : </label>
+                        <textarea name="Test" id="Test" class="form-control" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="Pmode">Payment Mode : </label>
+                    </div>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" name="Pmode" id="online" value="online">
+                        <label for="online">Online</label>
+                    </div>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" name="Pmode" id="offline" value="offline">
+                        <label for="offline">Offline</label>
+                    </div>
+                </div>
+                <br>
+                <p align="center"><button type="submit" id="form-submit">Submit</button></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts/form.js"></script>
+</body>
+</html>

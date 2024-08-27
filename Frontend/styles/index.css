@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+h2{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(23, 29, 75);
+    border-radius: 18px;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    border: 5px solid black;
+    border-radius: 2.5rem;
+    margin: 12px;
+}
+
+button{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+h1{
+    font-size: 30px;
+    font-family:  "Open Sans", sans-serif;
+    color: rgb(23, 29, 75);
+}
+
+button:hover{
+    transform: scale(1.07);
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited,
+a:active,
+a:hover{
+    text-decoration: none;
+}
